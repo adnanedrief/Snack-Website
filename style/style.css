@@ -1,0 +1,557 @@
+@font-face {
+    font-family: 'berkshire_swashregular';
+    src: url('../fonts/berkshireswash-regular-webfont.eot');
+    src: url('../fonts/berkshireswash-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/berkshireswash-regular-webfont.woff2') format('woff2'),
+         url('../fonts/berkshireswash-regular-webfont.woff') format('woff'),
+         url('../fonts/berkshireswash-regular-webfont.ttf') format('truetype'),
+         url('../fonts/berkshireswash-regular-webfont.svg#berkshire_swashregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'yellowtailregular';
+    src: url('../fonts/Yellowtail-Regular-webfont.eot');
+    src: url('../fonts/Yellowtail-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Yellowtail-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/Yellowtail-Regular-webfont.woff') format('woff'),
+         url('../fonts/Yellowtail-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Yellowtail-Regular-webfont.svg#yellowtailregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+* /*pour que les elements de ma page ( container body) soit ataché directment avec le top et le bas de la page entiere*/
+{
+   margin: 0;
+  padding: 0;
+
+
+ 
+ 
+}
+
+body
+{
+ 
+
+  background:  url(../img/background.png) repeat; /*le background du body different du div qui est à l intérieur du body */
+
+}
+
+p
+{ 
+  padding: 0 0 20px 0;
+  font-family: 'berkshire_swashregular';
+  line-height: 1.7em;
+}
+
+img
+{ 
+  border: 0;
+  margin-top: 3px;
+  border-radius: 10px;
+}
+
+h1, h2
+{
+  color: #362C20;
+  letter-spacing: 0em;
+  padding: 0 0 5px 0;
+}
+
+h1, h2,
+{
+  font: normal 170% 'century gothic', arial;
+  margin: 0 0 15px 0;
+  padding: 15px 0 5px 0;
+  color: #000;
+}
+
+h2
+{ 
+  font-size: 160%;
+  padding: 9px 0 5px 0;
+  color: #009FBC;
+}
+
+h3
+{ 
+  font-size: 140%;
+  padding: 5px 0 0 0;
+}
+
+a, a:hover
+{
+ outline: none;
+  text-decoration: underline;
+  color: #00C6F0;
+}
+
+a:hover
+{ 
+  text-decoration: none;
+}
+
+
+ul
+{ 
+  margin: 2px 0 22px 17px;
+}
+
+ul li
+{ 
+  list-style-type: circle;
+  margin: 0 0 6px 0; 
+  padding: 0 0 4px 5px;
+  line-height: 1.5em;
+}
+
+
+.center
+{ 
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+#main, #menubar, #footer
+{
+ margin-left: auto; 
+  margin-right: auto;
+}
+
+#header
+{
+ background: #000000;
+  border-bottom: 1px solid #CCC;
+  height: auto;
+}
+  
+
+#menubar /* la bar qui contient les sous bars ( menu , contact us ) */
+{
+  width: auto;
+  height: 45px;
+  padding-right: 8px;
+  background: #000000;
+  border-top: 1px solid #CCC;
+
+
+} 
+
+ul#menu   /* la balise ul qui a comme id menu */ 
+{ 
+  float: right;
+  margin: 0%;
+  justify-content: center;
+
+
+}
+
+ul#menu li
+{ float: left;
+  padding: 0 0 0 9px;
+  list-style: none;
+  border-radius: 20px;
+  margin: 8px 4px 0 4px;
+
+}
+
+ul#menu li a  /* la bar qui continet le menu , contact us ,... */
+{
+  font: normal 100% 'berkshire_swashregular', sans-serif;
+  display: block; 
+  float: left; 
+  height: 20px;
+  padding: 6px 20px 5px 20px;
+  text-align: center;
+  color: #FFF;
+  border-radius: 20px;
+  text-decoration: none;
+  background: #BBB;} 
+
+ul#menu li.selected a
+{ 
+  height: 20px;
+  padding: 6px 20px 5px 11px;
+}
+
+ul#menu li.selected
+{ 
+  margin: 8px 4px 0 13px;
+  background: #00C6F0; /* demi couleur de background de la bar */
+}
+
+ul#menu li.selected a, ul#menu li.selected a:hover
+{ 
+  background: #00C6F0; /* la suite de la couleur de background de la bar */
+  color: #FFF;
+}
+
+ul#menu li a:hover
+{
+ color: #323232;
+}
+
+  
+#content ul
+{ 
+  margin: 2px 0 22px 0px;
+}
+
+#content ul li, .sidebar ul li
+{ 
+  list-style-type: none;
+  background: url(bullet.png) no-repeat;
+  margin: 0 0 0 0; 
+  padding: 0 0 4px 25px;
+  line-height: 1.5em;
+}
+
+#footer
+{ width: 100%;
+  font-family: 'berkshire_swashregular',sans-serif;
+  font-size: 18px;
+  height: auto;
+  padding: 28px 0 5px 0;
+  text-align: center; 
+  background: #000000;
+  border-top: 1px solid #AAA;
+  color: white;
+}
+
+#footer p
+{
+ line-height: 1.7em;
+  padding: 0 0 10px 0;
+}
+
+#footer a
+{ 
+  color: #FFF;
+  text-decoration: none;
+}
+
+#footer a:hover
+{ 
+  color: #00C6F0;
+  text-decoration: none;
+}
+
+
+  
+table
+{ 
+  margin: 10px 0 30px 0;
+  border-collapse: separate;
+  border-spacing: 25px;  /*pour faire un espacement entres les cellules des tableaux */
+  font-family: 'berkshire_swashregular';
+
+}
+
+td
+{
+  
+  line-height: 45px;
+
+}
+
+.social_media /* pour le class de div qui contient les incons des social media de la page contact.html  */
+{
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 15px;
+
+}
+
+
+.copyright  /* copyright pour le nom du snack  */
+{
+
+  color: white;
+  font-family: 'berkshire_swashregular';
+
+}
+
+.container
+{
+  border: 2px solid blue;
+  margin-left: 50px;
+  width: 520px;
+}
+
+.container_body /* div regroupe tout les elements de ma page */
+{
+  width: 88%;
+  background: #F5F5F5;
+  margin: auto;
+}
+.formulaire /*le class du div qui contient les differents div du la page du formulaire*/
+{
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  
+}
+.side_bar /* le class du side_bar qui contient le petit proverbe  et les infos du contact*/
+{
+  margin-right: 150px;
+  margin-left: 25px;
+  
+}
+#quotes /*le class du petit proverbe seul dans la page du contact*/
+{
+  border-right: 4px solid navy;
+  font-family: 'berkshire_swashregular';
+  margin-top: 50px;
+
+}
+.form1 /*le formulaire */
+{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 25px;
+}
+.social_media1 /* le div des icons des résaux sociaux dans la page about.html*/
+{
+  font-size: 15px;
+  margin-bottom:  30px;
+  margin-top: 30px;
+  margin-left: 20px;
+
+
+
+}
+.form-group /* le class des cases de données */
+{
+      margin-top: 20px;
+}
+input,textarea
+{
+  font-size: 20px;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-family: 'berkshire_swashregular';
+}
+fieldset
+{
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px green;
+}
+.img-responsive /*le class des images du BANNER dans toute la page  */
+{
+  margin-top: 5px;
+  width: 1185px;
+  height: 700px;
+}
+#contenu /* contient le proverbe et le petit texte de about */
+{
+  display: flex;
+  flex-direction: row;
+ 
+}
+.about  /*le class du div about dans la page about.html*/
+{
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    text-align: justify;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+.quotes1 /* le quotes de la page d about  */
+{
+  font-size: 15px;
+  width: 400px;
+  margin-top: 50px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  border:  5px dotted green;
+  border-radius: 30px;
+}
+
+.famous_dishes /* les classes des rondes images */ 
+{
+  border-radius: 360px;
+  box-shadow: 5px 5px 5px 5px  pink;
+  width: 260px;
+  height: 260px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+.famous_dishes:hover
+{
+      box-shadow: 5px 5px 5px 5px #1affff;
+      transition: 1.2s; /*vitesse d affichage */
+}
+.text-center
+{
+  text-align: center;
+  font-family: 'berkshire_swashregular';
+}
+
+.star /* les étoiles dans le review*/
+{
+  text-shadow: 5px 5px silver ;
+}
+
+.star:hover /* les étoiles dans le review*/
+{
+  text-shadow: 5px 5px #80ffff ;
+}
+
+.celule_menu  /*la classe des cellules du tableau dans la page menu.html*/
+{
+  border: 5px blue dashed;
+  border-radius: 20px;
+  margin: auto;
+  padding: 12px;
+
+
+
+}
+
+.box_details_menu_page /*la classe du bloc qui contient des bottons details dans la page menu.html */
+{
+    border:1px silver solid;
+    height: 15px;
+    width: 25%;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background: white;
+}
+.box_details_menu_page:hover
+{
+  background: #ddffcc;
+  box-shadow: 5px 5px 30px  #ffa366;
+
+}
+.details /*la class du botton details dans la page menu.html*/
+{
+  color: black;
+  text-decoration:  none;
+
+}
+
+.sous_titres /* les sous titres dans toute les pages de mon sites comme ====> notre menu, goutez toute notre plats : */
+{
+  font-size:55px;
+  font-family: 'yellowtailregular';
+  text-align: center;
+  color: red;
+}
+.titres_menu_page /* les titres dans les cellules dans la page menu.html */
+{
+  font-family: 'berkshire_swashregular';
+}
+
+@media screen and (max-width: 900px) /* pour les téléphones */ 
+{
+      .container_body
+      {
+        width: auto;
+        height: auto;
+      }
+      img
+      {
+        width: 100%;
+        height: 100%;
+      }
+      .img-responsive /* les images du index dans chaque pages */ 
+      {
+        width: 100%;
+        height: 90%;
+      }
+
+      .celule_menu /* les cellules de la page menu.html*/
+      {
+          width: 70%;
+      }
+
+      .Menu_page_mobile /* le tableau de la page menu.html  et la page menu_table.html*/ 
+      {
+        width: 60%;
+       margin-left: 20%;
+      }
+
+      td
+      {
+        display: block;
+        width: 70%;
+        margin-left: 30%;
+        padding-bottom: 20%;
+
+      }
+      
+      #contenu  /*  contient le proverbe et le petit texte de about  */
+      {
+        display: flex;
+        flex-direction: column;
+      } 
+      .quotes1 /* le proverbe dans la page about.html */ 
+      {
+        margin:auto;
+        margin-top: 5%;
+      }
+     
+
+      .formulaire /* le div qui contient l proverbe & icons & formulaire de la page contact.html */
+      {
+        display: block;
+        
+      }
+      .mobile /* le class du tableau du formulaire dans la page contact.html*/
+      {
+        display: block;
+        width: 100%;
+
+      }
+      fieldset
+      {
+        width: 70%;
+        margin: auto;
+
+      }
+      input
+      {
+        width: 100%;
+      }
+      
+
+
+
+  }
+@media screen and ( max-width: 1300px) and (min-width: 899px) /* pour les tablette */ 
+ {
+    .container_body
+    {
+      width: auto;
+      height: auto;
+
+    }
+
+    .img-responsive /* les images du index dans chaque pages */ 
+    {
+      width: 100%;
+      height: 90%;
+    }
+    td
+    {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     position: relative;
+     left: 30%;
+    }
+          
+            
+}

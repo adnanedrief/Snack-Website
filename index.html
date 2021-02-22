@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+        <title>Home - Snack Adnane -</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style/style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.5/css/fork-awesome.min.css" integrity="sha256-P64qV9gULPHiZTdrS1nM59toStkgjM0dsf5mK/UwBV4=" crossorigin="anonymous"> <!-- le fichier css pour les icons hébérger dans le serveur  -->
+       
+</head>
+<body>
+    
+<div class="container_body"> <!--ce div regroupe tout les elements de ma page --> <!-- ici un problème de div qui se ferme pas -->
+          <div id="menubar">
+                    <ul id="menu">
+                      
+                      <li class="selected"><a href="index.html">Home</a></li> <!-- selected pour change la couleur du la bar de la page actuelle -->
+                      <li><a href="menu.html">Menu</a></li>
+                      <li><a href="About.html">About</a></li>
+                      <li><a href="contact.html">Contact Us </a></li> 
+
+                    </ul>
+           </div> <!-- fin div du menu -->
+              
+
+        <div id="page_index">
+
+                        <img  src="img/index_img.jpg"  class="img-responsive"   title="Délicieux" >  
+ 
+
+               <div>
+                    <h1 class="sous_titres">Goûtez tout notre menu!</h1>
+                    <p class="sous_titres" style="font-size: 35px; color:  #e60000;"> Plats Populaires </p>
+                </div>
+
+
+          <table>
+
+            <tr>
+                    <td>
+
+                       <img src="img/1.jpg" class="famous_dishes" id="Spaghetti"> <!-- les ID pour le Slidershow --> 
+                                    <h3 class="text-center">Spaghetti</h3>
+                    </td>
+
+                    <td>
+                       <img src="img/2.jpg" class="famous_dishes" id="Boisson" >
+                                    <h3 class="text-center">Boisson</h3>
+                    </td>
+
+                    <td>
+                      <img src="img/3.jpg" class="famous_dishes" id="Panini">
+                                    <h3 class="text-center">Panini</h3>
+                    </td>
+
+                    <td>
+                       <img src="img/4.jpg" class="famous_dishes" id="Pizza" >
+                                    <h3 class="text-center">Pizza</h3>
+                    </td>
+
+            </tr>
+          </table>                
+
+                            <div class="review">
+                                <h1 class="text-center">
+                                    <span class="sous_titres" >Review<br></span>
+                                    <span class="star">&#11088;</span>
+                                    <span class="star">&#11088;</span> <!--pour une étoile GOLD -->
+                                    <span class="star">&#11088;</span>
+                                    <span class="star">&#11088;</span>
+                                    <span class="star">&#11088;</span>
+                                </h1>
+
+                                <p class="text-center" style="font-size: 25px;">
+
+                                                        
+                                       <img id="reviews">
+                                                      
+                                </p>
+
+                                
+                                  
+                                
+                               
+                            </div> <!-- div du review-->
+     
+        </div> <!-- fin du div index_page-->
+
+        
+        <div id="footer">
+            <h1 class="copyright">Snack Adnane</h1>
+                
+                  &#9749;  <i><b> Lundi-Vendredi: </b></i> 7:00am-8:00pm <br> <!-- &#9749; icon du café en UTF-8 -->
+
+                  &#9749;   <i><b>Samedi-Dimanche:</b></i> 7:00am-10:00pm 
+
+                 <div class="social_media">    <!--mettez vos lien vers  vos pages social media-->
+                      <p>
+                       <a style="color: #3b5998 ; margin-right: 10px;" href="https://www.facebook.com" target="_blank" title="Notre page facebook"><i class="fa fa-2x fa-facebook"></i></a>
+                        <a style="color: #38A1F3; margin-right: 10px;" href="https://www.twitter.com" target="_blank" title="Notre page Twitter"><i class="fa fa-2x fa-twitter"></i></a>
+                        <a style="color: #FFFC00; margin-right: 10px;" href="https://www.snapchat.com" target="_blank" title="Notre page snapchat"><i class="fa fa-2x fa-snapchat"></i></a>
+                        <a style="color: #cc0066; margin-right: 10px;" href="https://www.instagram.com" target="_blank" title="Notre page instagram"><i class="fa fa-2x fa-instagram"></i></a>
+                     </p>
+                </div>
+                <div>
+                    <i><b><small>&copy; Copyright Adnane drief <br> SMI3 2018/2019</small></b></i> 
+                </div>
+
+    
+        </div> <!--fin du div du footer-->
+
+        
+    <script type="text/javascript" src="js/javascript.js"></script> 
+    <!-- le Script doit etre à la fin de la page car on aura ce message d erreur ==> (Cannot set property 'src' of null ) :: car on na pas encore selecté un element -->
+</div>
+</body>
+</html>
